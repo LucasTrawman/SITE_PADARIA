@@ -58,6 +58,12 @@ footer .integrantes .integrante {
   align-items: center;
   flex-direction: column;
 }
+footer .integrantes .integrante div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 footer .integrantes .integrante img {
-  height: 50px;
+  height: 25px;
 }/*# sourceMappingURL=style.css.map */
