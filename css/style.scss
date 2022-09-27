@@ -9,8 +9,8 @@
 
 .fundo {
   background-image: url("../img/background.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main {
   background-color: rgba(0, 0, 0, 0.7);
@@ -19,7 +19,7 @@ main {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content:baseline;
+  justify-content: baseline;
   gap: 150px;
   h1 {
     color: white;
@@ -28,7 +28,6 @@ main {
     a {
       color: white;
       text-decoration: none;
-      text-align: end; 
       transition: 1s;
     }
   }
@@ -64,11 +63,11 @@ main {
   }
 }
 
-h1 a:hover{
+h1 a:hover {
   color: rgb(196, 126, 5);
 }
 
-.download:hover{
+.download:hover {
   background-color: rgb(196, 126, 5);
 }
 
@@ -86,7 +85,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: white;
+    flex-wrap: wrap;
+    gap: 40px;
     .integrante {
+      width: 100px;
       gap: 10px;
       display: flex;
       justify-content: center;
@@ -105,6 +107,32 @@ footer {
     }
   }
 }
-.integrante:hover{
-    transform:scale(1.1);
+.integrante:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  main {
+    h1 {
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      a {
+        text-align: center;
+      }
+    }
+    .download {
+      max-width: 300px;
+      height: 50px;
+      padding: 5px;
+    }
+    padding: 50px 10px 50px 10px;
+  }
+
+  footer {
+    padding: 20px;
+    .integrante{
+      width: 100px;
+    }
+  }
 }

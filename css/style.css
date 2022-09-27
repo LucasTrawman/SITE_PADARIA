@@ -30,7 +30,6 @@ main h1 {
 main h1 a {
   color: white;
   text-decoration: none;
-  text-align: end;
   transition: 1s;
 }
 main .titulo {
@@ -87,8 +86,11 @@ footer .integrantes {
   justify-content: space-around;
   align-items: center;
   color: white;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 footer .integrantes .integrante {
+  width: 100px;
   gap: 10px;
   display: flex;
   justify-content: center;
@@ -108,4 +110,29 @@ footer .integrantes .integrante img {
 
 .integrante:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 50px 10px 50px 10px;
+  }
+  main h1 {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  main h1 a {
+    text-align: center;
+  }
+  main .download {
+    max-width: 300px;
+    height: 50px;
+    padding: 5px;
+  }
+  footer {
+    padding: 20px;
+  }
+  footer .integrante {
+    width: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
