@@ -9,30 +9,67 @@
 .fundo {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
-.fundo main {
+
+main {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100vh;
   width: 100%;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  gap: 150px;
 }
-.fundo main a {
-  text-decoration: none;
-  width: 100vw;
-  text-align: end;
-}
-.fundo main a h1 {
+main h1 {
   color: white;
   font-weight: 300;
+  text-align: end;
 }
-.fundo main div {
+main h1 a {
+  color: white;
+  text-decoration: none;
+  text-align: end;
+  transition: 1s;
+}
+main .titulo {
   font-size: 110px;
   color: white;
   font-weight: 700;
+  text-align: center;
 }
-.fundo main div span {
+main .titulo span {
   color: rgb(196, 126, 5);
+}
+main .download {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border: 1px solid rgb(196, 126, 5);
+  border-radius: 12px;
+  height: 50px;
+  width: 400px;
+  transition: 0.5s;
+}
+main .download h3 {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+h1 a:hover {
+  color: rgb(196, 126, 5);
+}
+
+.download:hover {
+  background-color: rgb(196, 126, 5);
 }
 
 footer {
@@ -40,7 +77,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(57, 57, 57);
+  background-color: rgb(30, 30, 30);
   color: rgb(224, 224, 224);
   padding: 50px;
 }
@@ -57,6 +94,7 @@ footer .integrantes .integrante {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.5s;
 }
 footer .integrantes .integrante div {
   display: flex;
@@ -66,4 +104,8 @@ footer .integrantes .integrante div {
 }
 footer .integrantes .integrante img {
   height: 25px;
+}
+
+.integrante:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
