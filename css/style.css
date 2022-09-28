@@ -90,8 +90,9 @@ footer .integrantes {
   gap: 40px;
 }
 footer .integrantes .integrante {
-  width: 100px;
+  width: 150px;
   gap: 10px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
